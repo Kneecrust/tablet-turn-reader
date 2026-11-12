@@ -265,7 +265,7 @@ $('editButton').addEventListener('click',()=>{$('patternDetails').open=true;$('e
 $('jumpButton').addEventListener('click',()=>{const wanted=Number($('jumpInput').value),at=picks.findIndex(p=>p.pick===wanted);if(at<0){status(`Pick ${wanted} isn't present in this pattern.`,true);return}index=at;renderReader()});
 $('jumpInput').addEventListener('keydown',e=>{if(e.key==='Enter'){$('jumpButton').click();e.preventDefault()}});
 $('source').addEventListener('input',()=>{$('runtime').textContent='Pattern edited · press Convert pattern below';$('runtime').classList.remove('error')});
-$('tabletCount').addEventListener('input',()=>{$('runtime').textContent='Tablet count edited · press Convert pattern below'});
+$('tabletCount').addEventListener('input',()=>{$('runtime').textContent='Tablet count edited · press Convert pattern below!'});
 document.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))return;if(e.key==='ArrowLeft'){e.preventDefault();move(-1)}else if(e.key==='ArrowRight'){e.preventDefault();move(1)}else if(e.key==='Escape'&&document.body.classList.contains('focus')){toggleFocus(false)}});
 const savedPick=Number(stored('pick'));
 if(convert(false)){const i=picks.findIndex(p=>p.pick===savedPick);if(i>=0){index=i;renderReader()}}
