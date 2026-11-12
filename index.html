@@ -91,6 +91,47 @@ body.focus .reader-actions{flex-wrap:wrap;justify-content:flex-end}
  .overview:not([open]) > .overview-list{display:grid!important}
  .overview > .overview-list{padding-bottom:0}
 }
+ /* Display labels vertically on single-card groups */
+.mini-segment.micro {
+  flex-direction: column;
+  font-size: 10px;
+  line-height: 1;
+  gap: 0;
+}
+ body.focus .mobile-dock {
+  display: grid;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  transform: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px 12px calc(8px + var(--safe));
+  background: var(--white);
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+}
+
+body.focus .mobile-dock button {
+  min-width: 0;
+  min-height: 44px;
+}
+
+body.focus .reader {
+  padding-bottom: calc(80px + var(--safe));
+}
+
+@media (orientation: landscape) and (max-height: 520px) {
+  body.focus .mobile-dock button {
+    min-height: 42px;
+    padding: 6px 10px;
+  }
+}
 </style></head><body>
 <main>
 <header><h1>Tablet Turn Reader</h1><div class="top-actions">
@@ -167,7 +208,7 @@ function makeStrip(groups,tiny=false){
   const d=effective(g.dir),button=document.createElement(tiny?'span':'button');
   button.className=tiny?`mini-segment ${d==='F'?'forward':'backward'} ${g.count===1?'micro':''}`:`segment ${d==='F'?'forward':'backward'} ${g.count<=2?'narrow':''} ${g.count===1?'micro':''}`;
   button.style.setProperty('--n',g.count);const range=g.start===g.end?String(g.start):`${g.start}–${g.end}`;
-  if(tiny)button.textContent=g.count>=2?`${g.count}${d==='F'?'↑':'↓'}`:'';
+  if(tiny)button.textContent=`${g.count}${d==='F'?'↑':'↓'}`;
   else{
    button.type='button';button.title=`Cards ${range}: ${g.count} ${d==='F'?'forward':'backward'}`;
    button.setAttribute('aria-label',button.title);
