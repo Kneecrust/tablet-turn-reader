@@ -98,7 +98,7 @@ You can even choose whether the overview lists the highest or lowest pick first.
 
 **6. Want it on your phone?**
 
-It works directly in your browser, but you can also add it to your home screen as an installable web app.
+It works directly in your browser, but you can also add it to your home screen.
 
 On iOS, open it in Safari and use **Share → Add to Home Screen**. After the app has cached its files, it can also be used offline.
 
