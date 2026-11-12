@@ -41,6 +41,10 @@ Each group displays its number of cards and turning direction, with the actual c
 
 The result is something you can hopefully read almost at a glance, working your way from left to right without having to do much counting or interpreting.
 
+
+<img width="1334" height="822" alt="SCR-20261112-kddu" src="https://github.com/user-attachments/assets/9ccab7ba-e004-41b0-b66f-8d79752579be" />
+<img width="1302" height="838" alt="SCR-20261112-kdij" src="https://github.com/user-attachments/assets/414a2b10-5e98-459b-a482-86f3fdc57725" />
+
 ### Some features
 
 - **One pick at a time.** Only the current pick is displayed, with a rather large pick number to make it obvious where you are. No more accidentally reading the nearly identical pick above or below.
@@ -51,7 +55,7 @@ The result is something you can hopefully read almost at a glance, working your 
 - **Full pattern overview.** A collapsible overview displays all picks using the same visual notation. You can tap any row to jump directly to it, or print the entire thing if you prefer working from paper.
 - **Dark mode.** Because sometimes you just don't want a bright white screen staring at you.
 - **Automatic progress saving.** Your pattern, settings and current pick are saved locally in your browser, so you can close the page and pick up where you left off.
-- **Offline use.** It can also be installed as a little web app on your phone, allowing you to use it without an internet connection once it's been loaded and cached.
+- **Mobile use.** It can also be used as a little web app on your phone.
 
 Nothing particularly revolutionary, but all aimed at reducing the amount of mental bookkeeping involved in following a pattern.
 
