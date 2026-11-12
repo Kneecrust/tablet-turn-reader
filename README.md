@@ -1,4 +1,4 @@
-# I made a little visual tablet weaving pattern reader!
+# A little visual tablet weaving pattern reader
 
 Hi all!
 
