@@ -55,7 +55,6 @@ The result is something you can hopefully read almost at a glance, working your 
 - **Full pattern overview.** A collapsible overview displays all picks using the same visual notation. You can tap any row to jump directly to it, or print the entire thing if you prefer working from paper.
 - **Dark mode.** Because sometimes you just don't want a bright white screen staring at you.
 - **Automatic progress saving.** Your pattern, settings and current pick are saved locally in your browser, so you can close the page and pick up where you left off.
-- **Mobile use.** It can also be used as a little web app on your phone.
 
 Nothing particularly revolutionary, but all aimed at reducing the amount of mental bookkeeping involved in following a pattern.
 
